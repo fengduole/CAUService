@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{33C2D766-5AB0-44D7-B109-81ADB6C6478A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CAUService</RootNamespace>
+    <AssemblyName>CAUService</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Macrofuns.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form_AlgSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AlgSelect.Designer.cs">
+      <DependentUpon>Form_AlgSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CourseDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CourseDatabase.Designer.cs">
+      <DependentUpon>Form_CourseDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EditUser.Designer.cs">
+      <DependentUpon>Form_EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_FondOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_FondOption.Designer.cs">
+      <DependentUpon>Form_FondOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_UserManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_UserManage.Designer.cs">
+      <DependentUpon>Form_UserManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Main.Designer.cs">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_AlgSelect.resx">
+      <DependentUpon>Form_AlgSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CourseDatabase.resx">
+      <DependentUpon>Form_CourseDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_EditUser.resx">
+      <DependentUpon>Form_EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_FondOption.resx">
+      <DependentUpon>Form_FondOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_UserManage.resx">
+      <DependentUpon>Form_UserManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Main.resx">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\update.ico" />
+    <None Include="icon\users.ico" />
+    <None Include="icon\option.ico" />
+    <None Include="icon\database.ico" />
+    <Content Include="Macrofuns.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mfAlgorithm\mfAlgorithm.csproj">
+      <Project>{6D943570-E4A3-411D-AD2A-38C6B4F17DB0}</Project>
+      <Name>mfAlgorithm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mfCourse\mfCourse.csproj">
+      <Project>{F9CDCFB8-09B2-48F4-9225-2E666E98019F}</Project>
+      <Name>mfCourse</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mfRegEdit\mfRegEdit.csproj">
+      <Project>{EA4EF168-27FA-476F-BE40-81338ABCC652}</Project>
+      <Name>mfRegEdit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mfText\mfText.csproj">
+      <Project>{81D0C8B2-DC06-4D66-B36D-E0A9F9CB9108}</Project>
+      <Name>mfText</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mfUser\mfUser.csproj">
+      <Project>{4FD99D8E-B599-4A60-8BF4-D2C7BE618D5D}</Project>
+      <Name>mfUser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Update\Update.csproj">
+      <Project>{6FBC6624-0C64-4E63-9D23-B3F55F55DF02}</Project>
+      <Name>Update</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
